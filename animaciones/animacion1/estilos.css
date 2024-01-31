@@ -1,0 +1,23 @@
+.elemento{
+    width: 100px;
+    height: 100px;
+    animation: change-color 3s linear infinite;
+}
+
+@keyframes change-color {
+    from{
+        background: red;
+    } /* Primer fotograma */
+    25%{
+        background: orange;
+    }
+    50%{
+        background: yellow;
+    }
+    75%{
+        background: green;
+    }
+    to{
+        background: red;
+    } /* Segundo y ultimo fotograma */
+}

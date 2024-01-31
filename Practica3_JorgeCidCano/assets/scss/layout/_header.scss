@@ -1,0 +1,102 @@
+header{
+    background-color: $darkGreen15;
+    text-align: center;
+    >div:nth-child(1){
+        padding: 14px 16px;
+        padding-top: 40px;        
+        @include media(movil){
+            background: url(../images/header/fontoBt1.png) left bottom no-repeat, url(../images/header/fontoBt1-2.png) right bottom no-repeat;
+            background-position: left -86px top 48px, right -71px top 65px;
+            background-size: 144px;
+        }  
+        >div{  
+            border: 1px solid $darkGreen20;
+            border-radius: 6px;
+            background: url(../images/header/fontoBt1.png) left center no-repeat, url(../images/header/fontoBt1-2.png) right center no-repeat $darkGreen25;
+            background-position: left 50px top -30px, right 50px top -30px;
+            font-weight: 500;  
+            font-size: $fontSizeParrafo;
+            color: $white;
+            padding: 9px 0;
+            @include media(movil){
+                font-size: 14px;
+                background: none;
+                background-color: $darkGreen25;
+            }
+            @include media(tablet){
+                font-size: 16px;
+            } 
+            >a{
+                text-decoration: none;
+                color:$white;
+                >img{   
+                    vertical-align: -2px;
+                    padding-left: 10px;  
+                    @include media(movil){
+                        vertical-align: -4px;
+                    }
+                    &:nth-child(1){   
+                        vertical-align: bottom;
+                        padding-right: 5px;
+                        @include media(movil){
+                            width: 20px;   
+                            vertical-align: -5px;                         
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    >div:nth-child(2){
+        border-top: 1px solid $darkGreen25;
+       
+        >div{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-between;   
+            align-items: center;
+            @include media(movil){
+                padding: 20px 16px;
+            }
+            img.logo{
+                @include media(movil){
+                    width: 147px;
+                } 
+            }
+            nav.menu {
+                @include media(movil){
+                    display: none;
+                }
+                a{
+                    font-size: $fontSizeParrafo;
+                    font-weight: $fontWeightTitulo;
+                    color:$green97;
+                    margin: 5px 10px;
+                    &.active, 
+                    &:hover{
+                        color: $green70;
+                    }
+                    @include media(tablet){
+                        font-size: 14px;
+                    } 
+                }
+                button{
+                    margin: 20px 0;
+                    background-color: $green70;
+                    font-size: $fontSizeParrafo;
+                    font-weight: $fontWeightTitulo;
+                    color: $grey15;
+                    padding: 15.5px 24.37px;
+                    border-radius: 8px;
+                    margin-left: 20px;
+                }
+            }
+            nav.menuBurguer{
+                display: none;
+                @include media(movil){
+                    display: block;
+                } 
+            }
+        }
+    }    
+}

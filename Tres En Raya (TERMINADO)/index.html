@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="css/tailwindcss.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Examen C</title>
+</head>
+<body>
+
+    
+    <div class="container mx-auto mt-1 mb-5 pb-5 bg-lime-200">     
+        <header id="header" class="bg-orange-50 p-3 font-bold">
+            Examen - TRES EN RAYA
+        </header>
+
+
+        <main class="max-w-lg mx-auto">
+<!-- 
+            TAREA 1: 
+                Color Amarillo: bg-yellow-500
+                Color Rojo: bg-red-600
+-->
+
+                <div class="grid grid-cols-3 gap-6 mt-10" id="tablero">
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="01"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="02"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="03"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="04"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="05"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="06"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="07"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="08"></div>
+                        <div class="ficha rounded-full bg-white border-2 border-stone-900 w-24 h-24" id="09"></div>
+                </div>
+
+
+            <div class="flex justify-center mb-10 mt-10">
+               <button id="turno" class="w-48 bg-red-600 opacity-90 mr-5 uppercase font-bold px-2 py-3" 
+                   type="button">Turno Rojas</button>
+            </div>
+
+
+<!-- 
+                TAREA 2
+-->
+
+            <div class="flex flex-col">
+                <p class="max-w-lg mx-auto">
+                    Tiempo: <input type="text" readonly name="segundos" id="segundos" class="bg-gray-100 border-2 border-lime-900 shadow p-3" value="0"></input>
+                </p>
+                <p class="flex justify-center mb-10 mt-10">
+                    <button id="partida" class="w-1/2 bg-blue-600 mx-3 px-2 py-3 text-white items-center opacity-90 mr-5 uppercase font-bold" 
+                   type="button">Nueva Partida!!
+                    </button>
+                </p>
+            </div>
+
+<!-- 
+                TAREA 3
+-->
+
+            <div class="grid grid-cols-2 gap-1 mt-3.5">
+                <div class="rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500 p-3 font-bold border-stone-900 border-2">
+                    <p class="text-center underline decoration-double tracking-widest italic text-lg">
+                    Mejor tiempo: 
+                     </p>
+                    <p class="text-center uppercase tracking-widest italic text-2xl">
+                        <span class="tiempos">0</span>
+                    </p>
+                </div>
+                <div class="rounded-lg bg-gradient-to-r from-red-200 to-red-400 p-3 font-bold border-stone-900 border-2">
+                    <p class="text-center underline decoration-double tracking-widest italic text-lg">
+                    Mejor tiempo: 
+                     </p>
+                    <p class="text-center uppercase tracking-widest italic text-2xl">
+                        <span class="tiempos">0</span>
+                    </p>
+                </div>
+            </div>
+
+
+
+        
+        </main>
+    </div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+      

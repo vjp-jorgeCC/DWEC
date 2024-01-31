@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion 1</title>
+    <link rel="stylesheet" href="./../output.css">
+</head>
+<body>
+    <div class="elemento w-24 h-24 animate-change-color"></div>
+    <style>
+        @keyframes change-color {
+            from {
+                background: red;
+            }
+            25% {
+                background: orange;
+            }
+            50% {
+                background: yellow;
+            }
+            75% {
+                background: green;
+            }
+            to {
+                background: red;
+            }
+        }
+
+        .animate-change-color {
+            animation: change-color 3s linear infinite;
+        }
+    </style>
+</body>
+</html>

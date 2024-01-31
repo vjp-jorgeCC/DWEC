@@ -1,0 +1,3 @@
+Inclur en las peliculas actores y directos con un select que me muestre todos
+Incluir formulario para registrar actores
+Incluir formulario para registrar directores

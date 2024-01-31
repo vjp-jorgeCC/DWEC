@@ -1,0 +1,39 @@
+#carrito{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    min-height: 45rem;
+    min-width: 45rem;
+    padding: 2rem;
+    top:10rem; 
+}
+
+.carrito__lista
+{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 35rem;
+    min-width: 40rem;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+}
+
+
+
+.carrito__vaciar{
+    display: block;
+    color: var(--blanco);
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    margin: 1rem;
+    min-width: 35rem;
+    transition: background-color .3s ease;
+    text-align: center;
+}
+
+
+

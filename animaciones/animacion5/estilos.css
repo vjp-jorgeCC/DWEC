@@ -1,0 +1,15 @@
+.element{
+    width: 112px;
+    height: 156px;
+    background: url("img/bernard-bernoulli.png");
+    animation: walk 0.75s infinite steps(6);
+}
+
+@keyframes walk {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -672px 0;
+    }
+}

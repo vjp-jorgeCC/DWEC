@@ -1,0 +1,6 @@
+{
+    "require": {
+        "kint-php/kint": "^5.1",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

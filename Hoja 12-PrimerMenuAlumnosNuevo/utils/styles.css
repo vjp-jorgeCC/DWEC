@@ -1,0 +1,203 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #0056b3;
+}
+
+nav a:hover {
+    background-color: #042444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(73, 64, 64, 0.1);
+    margin: 120px auto;
+    background-color: rgb(73, 70, 70);
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container input[type="submit"] {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin: 20px auto;
+}
+
+/* Estilos para usuarioVista.php y adminVista.php */
+
+.header-welcome {
+    text-align: center;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-user {
+    background-color: #0056b3;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-user a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-user a:hover {
+    text-decoration: underline;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-info span {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10px;
+    color: white;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.caja {
+    width: 40%;
+    margin: 100px auto;
+    padding: 50px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nombre-usuario {
+    color: #007BFF;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.rol {
+    color: #28a745;
+    font-size: 1.2em;
+}
+
+.tabla-comentarios {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(185, 180, 180);
+}
+
+.tabla-comentarios th,
+.tabla-comentarios td {
+    width: 25%;
+    border: 2px solid rgb(185, 180, 180);
+    padding: 8px;
+    text-align: center;
+}

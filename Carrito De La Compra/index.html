@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAT Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>        
+        <a class="navegacion__enlace navegacion__enlace--carrito" href="#" id="iconoCarrito"><img class="bloque__imagen" src="img/carrito.png" alt="carrito"></a>
+    </nav>
+
+
+
+    <main class="contenedor">
+        <h1>Nuestros Productos</h1>
+
+        <div class="contenedor">
+        <form id="buscador">
+                <div>
+                    <label for="minimo">Precio Min</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="maximo">Precio Max</label>
+                    <select class="u-full-width" id="maximo">
+                        <option value="">Seleccione</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                </select>
+                </div>
+            </div>
+        </form>
+        </div>
+
+
+
+        <div class="grid">
+            <!-- Aquí se colocan los productos <div class="producto"></div> -->
+            <div class="grafico grafico--comida"></div>
+            <div class="grafico grafico--node"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Eat Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+
+    <div id="carrito">
+        <a href="#" id="cerrar-carrito" class="carrito__vaciar">Cerrar Carrito</a>
+        <table id="lista-carrito" class="carrito__lista">
+            <thead>
+                <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+
+            </tbody>
+        </table>
+        <a href="#" id="vaciar-carrito" class="carrito__vaciar">Vaciar Carrito</a>
+    </div>
+       <script src="js/db.js"></script>
+       <script src="js/app.js"></script>
+</body>
+</html>

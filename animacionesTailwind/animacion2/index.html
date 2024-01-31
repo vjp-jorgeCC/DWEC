@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion 2</title>
+    <link rel="stylesheet" href="./../output.css">
+</head>
+<style>
+    .element{
+        width: 200px;
+        height: 50px;
+        margin: 5px;
+        background: deeppink;
+        color: white;
+        animation: animated 1s infinite alternate;
+    }
+    @keyframes animated {
+        to{
+            width: 500px;
+        }
+    }
+    .cubic-bezier{
+        animation-timing-function: cubic-bezier(1,0.5,0.90,0.25);
+    }
+    .linear{
+        animation-timing-function: linear;
+    }
+</style>
+<body>
+    <div class="element cubic-bezier">Cubic-bezier</div>
+    <div class="element linear">Linear</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-color: $green95;
+    font-family: $fontFamily;
+    line-height: $lineHeight;
+    position: relative;
+}
+
+h2{
+    all: revert;
+    font-weight: $fontWeightTitulo;
+    font-size: $fontSizeTitulo;  
+    line-height: $lineHeight;  
+}
+
+p{
+    all: revert;
+    font-weight: 500;
+    font-size: $fontSizeParrafo;    
+    color: $grey20;
+    line-height: $lineHeight;
+}
+
+main, 
+header>div:nth-child(1)>div, 
+header>div:nth-child(2)>div, 
+footer>div{
+    max-width: 1596px;
+    margin: 0 auto;;
+}
+
+#cambiarStyle{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #fd073c;
+    font-size: $fontSizeParrafo;
+    font-weight: $fontWeightTitulo;
+    color: $white;
+    padding: 15.5px 24.37px;
+    border-radius: 8px;
+    z-index: 10;
+}

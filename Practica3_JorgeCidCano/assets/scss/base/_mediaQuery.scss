@@ -1,0 +1,34 @@
+/* @mixin media($media) {
+    @if $media == movil {
+        @media (max-width: $breakpoint-movil) { 
+            @content; 
+         }
+    }@else if $media == tablet {
+        @media (min-width: $breakpoint-movil) and (max-width: $breakpoint-tablet) {    
+             @content;
+         }
+    }@else if $media == portatil {
+         @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-escritorio) { 
+              @content; 
+          }
+     }@else if $media == sobremesa {
+          @media (min-width: $breakpoint-escritorio) {    
+               @content; 
+           } 
+      } 
+} */
+@mixin media($media) {
+    @if $media == movil {
+        @media (max-width: $breakpoint-movil) { 
+            @content; 
+         }
+     }@else if $media == tablet {
+        @media (min-width: $breakpoint-movil) and (max-width: $breakpoint-escritorio) {    
+             @content;
+         }   
+     }@else if $media == sobremesa {
+          @media (min-width: $breakpoint-escritorio) {    
+               @content; 
+           } 
+      } 
+}

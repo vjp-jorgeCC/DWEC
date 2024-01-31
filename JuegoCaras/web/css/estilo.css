@@ -1,0 +1,211 @@
+/* General */
+* {
+  margin: 0;
+}
+BODY {
+  font-family: verdana, arial, sans-serif;
+  font-size: 14pt; 
+  height: 100%;
+}
+/* Contenido */
+
+.gestion {
+  margin-top: 10%;
+}
+.centrado {  
+  background-color: white;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 700;
+  color: #c5014f; 
+  padding-top: 27%;
+}
+.centrado1 {
+  background-color: white;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 700;
+  color: #c5014f;  
+  padding-top: 10;
+}
+.caja2 {
+  background: #ffffff;
+  opacity: 0.84;
+  color: rgb(10, 128, 206);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 4% 25%;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 35px 35px 35px; 
+  border: 3px solid rgb(38, 97, 207);
+}
+.caja3 {  
+  background-image: url("../imagenes/varias/juegosMesa.jpg");  
+  background-size: cover;
+  height: 60%;
+  width:60%;
+  opacity: 0.84;  
+  margin-left:18%;
+  margin-right: 18%;
+  overflow: hidden;  
+  border-radius: 35px 35px 35px 35px; 
+  border: 3px solid rgb(38, 97, 207);
+}
+table.center {
+  position:absolute;  
+  margin-left:25%;  
+  float: center;
+  border: rgb(240, 230, 230) 5px solid;
+}
+TH {font-size: 15pt; font-weight: bold; color: white;  text-align: center;background: rgb(49, 41, 2);}
+TD {font-size: 15pt;  font-weight: 400;color:white; text-align: center; background: #48961b;}
+td.actor
+{
+  /* background: rgb(49, 41, 2); */
+  border: rgb(49, 41, 2) 3px solid; 
+  padding: 8px
+}
+td.vertical
+{
+  vertical-align: top;
+  text-align: center;
+  
+}
+.marcador
+{
+  margin: 0;
+  font-size: 300%;
+  border: rgb(49, 41, 2) 3px solid;
+  padding: 4px
+}
+a {
+  color: white;
+}
+img.izquierda {
+  padding-left: 4px;  
+  float: left;  
+  width: 30px;
+  height: 30px;
+}
+.textcentrado {
+  padding: 10%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;  
+}
+.titulo
+{ color: #48961b;   
+  font-size: 25px;
+  font-weight: 300;
+}
+.textcentrado1 {  
+  color: #48961b;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;  
+} 
+.textderecha {
+  text-align: right;
+}
+#menu-horizontal {
+  width: 97%;
+  height: 25px;
+}
+ul#menu-horizontal li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+#menu-horizontal li {
+  margin: 0 1px;
+  width: 45%;
+  min-height: 25px;
+  text-align: center;
+  background-color: rgb(49, 41, 2);
+  list-style: none;
+  padding-top: 14px;
+  padding-right: 2px;
+  padding-left: 2px;
+  color: white;
+}
+ul#menu-horizontal ul {
+  display: none;
+  position: relative;
+  top: 24;
+  left: 0;
+  height: 18px;
+  padding: 3px;
+  text-align: center;
+  background: #ffffff;
+}
+
+ul#menu-horizontal ul li {
+  display: block !important;
+}
+ul#menu-horizontal li:hover ul {
+  display: none;
+}
+ul#menu-horizontal li:hover ul {
+  display: block;
+}
+#menu-horizontal li:hover {
+  background: #48961b;
+}
+#menu-horizontal li a {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 13 px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#menu-horizontal li ul li {
+  float: none;
+  width: 100%;
+  height: 10px;
+  text-align: center;
+  margin: 1px 0;
+}
+.centradoPaginado {
+  margin-left: 35%;
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  height: 40px;
+  padding-top: 1%;
+  font-size: 12pt;
+}
+.centradoPaginado a.enlace {
+  color: #0066cc;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.centradoPaginado a.desactivar { 
+  pointer-events: none;
+  cursor:not-allowed;
+  color: grey;
+  text-decoration: none;  
+  padding: 8px 16px; 
+}
+.centradoPaginado a.actual {
+  background-color: #c5014f;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.centradoPaginado a:hover:not(a.active) {
+  background-color: #0066cc;
+  color: white;
+}
+.wrapper {
+  min-height: calc(100% - 3rem);
+}
+.pie {
+  height: 3rem;
+  width: 100%;
+  background-color:rgb(49, 41, 2);
+  color: #fff;
+  text-align: right;
+}
+

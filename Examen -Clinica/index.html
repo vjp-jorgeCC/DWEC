@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <script src="./css/tailwindcss.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Examen B</title>
+</head>
+<body class="bg-blue-200">
+
+    
+    <div class="container mx-auto mt-1 bg-blue-200">     
+        <header id="header" class="bg-blue-300 p-3 font-bold">
+            Examen 2ª Evaluación
+        </header>
+
+
+        <main class="max-w-lg mx-auto">
+
+            <div class="mb-10">
+                <form>
+                <fieldset>
+                    <div class="mb-10 border-solid border-gray-600">
+                        <legend class="p-3 font-bold flex items-center justify-center text-xl">Clínica Febrero</legend>
+                        <div class="flex items-center justify-center font-mono text-white text-sm font-bold leading-6 gap-2">
+                            <button id="pedirCita"  type="button" class="p-4 rounded-lg  bg-indigo-500 shadow-lg">Pedir Cita</button>
+                            <button id="anularCita"  type="button" class="p-4 rounded-lg  bg-red-500 shadow-lg">Anular Cita</button>
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
+                
+                 
+                <div class="flex items-center justify-center font-mono text-black text-xl font-bold leading-6 mb-10" id="numero">
+                    Tu número: 
+                    <!-- Aquí va tu numero -->                    
+                </div>
+
+                <div class="flex items-center justify-center font-mono text-black text-xl font-bold leading-6 mb-10" id="ultimo">
+                    <!-- Último número llamado: -->
+                    <!-- Aquí va el numero -->                                       
+                </div>
+
+                <div class="container m-10 mb-10">  
+                    Lista de números:
+                    <div class="grid grid-cols-4 grid-rows-3 gap-4 font-mono text-white text-sm font-bold" id="lista">
+                        <!-- Aquí van los numeros -->                        
+                    </div>
+                </div>
+               
+<script src="js/app.js" type="module"></script>
+</body>
+</html>
+      

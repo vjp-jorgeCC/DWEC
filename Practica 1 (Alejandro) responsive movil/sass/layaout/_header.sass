@@ -1,0 +1,44 @@
+header
+    background-color: $darkGreen20
+    text-align: center
+    padding-top: 14px
+    >div:nth-child(1)>div  
+        border: 1px solid $darkGreen25
+        border-radius: 6px
+        background: url(../images/fontoBt1.png) left center no-repeat, url(../images/fontoBt1-2.png) right center no-repeat $darkGreen30
+        font-weight: 500  
+        font-size: $fontSizeParrafo
+        color: $white
+        padding: 9px 0      
+        margin-bottom: 14px
+        >a>img   
+            vertical-align: -2px
+            padding-left: 10px 
+            &:nth-child(1)   
+                vertical-align: bottom
+                padding-right: 5px       
+    >div:nth-child(2)
+        border-top: 1px solid $darkGreen30
+        margin-top:14px!important
+        >div
+            display: grid
+            grid-template-columns: repeat(2, auto)
+            justify-content: space-between   
+            align-items: center
+            nav 
+                a
+                    font-size: $fontSizeParrafo
+                    font-weight: $fontWeightTitulo
+                    color: $green95
+                    margin: 5px 10px
+                    .active, &:hover
+                        color: $green70                
+                button
+                    margin: 20px 0
+                    background-color: $green70
+                    font-size: $fontSizeParrafo
+                    font-weight: $fontWeightTitulo
+                    color: $grey15
+                    padding: 15.5px 24.37px
+                    border-radius: 8px
+                    margin-left: 20px

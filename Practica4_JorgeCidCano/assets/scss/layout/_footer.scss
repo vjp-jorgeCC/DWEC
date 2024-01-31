@@ -1,0 +1,42 @@
+*{
+    font-family: 'Roboto', sans-serif;
+  }
+    footer {
+      max-width: 1181px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 65px;
+
+      img{
+        margin-left: 40px;
+      }
+      div {
+        margin-top: -10px;
+        ul {
+          display: flex; // Cambiado a flex en lugar de grid
+          list-style: none;
+          li {
+            margin-right: 10px; // Ajusta el espacio entre los elementos si es necesario
+            a{
+              color: #8794BA;
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0em;
+              text-align: left;
+              text-decoration: none;
+  
+            }
+          }
+        }
+      }
+      div{
+        text-align: right;
+        a{
+          padding-right: 20px;
+        }
+          
+      }
+    }

@@ -1,0 +1,9 @@
+body{
+    font-size: 2rem;
+    background-color: grey;
+}
+span{
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: content-box;
+}

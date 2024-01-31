@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.cielo{
+    background: url(./img/monkey-sky.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 148px;
+    animation: escenario 6s infinite steps(75);
+}
+
+.suelo{
+    background: url(./img/monkey-sea.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 148px;
+    animation: escenario 3s infinite steps(75);
+}
+
+
+.element{
+    width: 112px;
+    height: 156px;
+    background: url("img/bernard-bernoulli.png");
+    position: relative;
+    margin-right: 0;
+    bottom: 40px;
+    animation: walk 0.75s infinite steps(6) , paseo 6s linear infinite;
+}
+
+@keyframes walk {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -672px 0;
+    }
+}
+
+@keyframes paseo {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes escenario {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -672px 0;
+    }
+}

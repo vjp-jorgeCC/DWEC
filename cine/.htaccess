@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /dwes/SegundoTrimestre/cine/
+
+# Redirigir de registro a index.php?ctl=inicio
+RewriteRule ^registro/?$ index.php?ctl=inicio [L]
